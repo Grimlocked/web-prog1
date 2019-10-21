@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+
+/*
+   		Author: Brandon Welty
+		Date: 10/20/2019
+		For: Wellsville ASC Auto Repair
+		Filename: index_navicon.css
+*/
+
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+a#navicon {
+	display: none;
+}
+
+
+/* ===============================
+   Mobile Devices: 0 to 480px 
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+	
+	a#navicon{
+		display: block;
+		background-color: white;
+		width: 30%;
+	}
+
+	nav.horizontal ul {
+		display: none;
+	}
+	
+	a#navicon:hover+ul, nav.horizontal ul:hover {
+		display: block;
+	}
+	
+}
