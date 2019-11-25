@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta charset="utf-8"/>
-	<meta name="keywords" content="AK Harding Beef"/>
+	<meta name="keywords" content="ASC Auto Repair"/>
 	
 <title>About AK Harding Beef</title>
 	<link rel="icon" href="images/bull-head.png" type="images/gif" sizes="16x16"/>
