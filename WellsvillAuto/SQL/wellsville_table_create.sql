@@ -1,0 +1,26 @@
+USE [master]
+GO
+
+SET ANSI_NULLS OFF
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Wellsville](
+	[fName][VARCHAR](30) NOT NULL,
+	[lname][VARCHAR](30) NOT NULL,
+	[streetAdr][VARCHAR](50) NOT NULL,
+	[city][VARCHAR](45) NOT NULL,
+	[state][VARCHAR](2) NOT NULL,
+	[zip][VARCHAR](9) NOT NULL,
+	[email][VARCHAR](50) NOT NULL,
+	[phone][VARCHAR](10) NOT NULL,
+	[student][VARCHAR](1) NOT NULL,
+	[stuIDNumber][VARCHAR](9),
+	[vehMake][VARCHAR](25) NOT NULL,
+	[vehModel][VARCHAR](25) NOT NULL,
+	[vehYear][VARCHAR](4) NOT NULL,
+	[id][INT] NOT NULL
+)ON [PRIMARY]
+GO

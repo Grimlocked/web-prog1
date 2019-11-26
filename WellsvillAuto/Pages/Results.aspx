@@ -1,0 +1,72 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Results.aspx.cs" Inherits="WellsvillAuto.Pages.Results" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8"/>
+	<meta name="keywords" content="ASC Auto Repair"/>
+	
+<title>ASC Auto Repair</title>
+	<link rel="icon" href="~/images/Logo.png" type="images/gif" sizes="16x16"/>
+	<link href="/CSS/base.css" rel="stylesheet"/>
+	<link href="/CSS/index_styles2.css" rel="stylesheet" />
+	<link href="/CSS/index_flex.css" rel="stylesheet" />
+	<link href="/CSS/index_navicon.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+		<a href="index.aspx"><img src="/images/header_Logo.png" alt="ASC Auto Repair"/></a>
+		<nav class="horizontal">
+			<a id="navicon" href="#">
+			  <img src="images/navicon.png" alt="" />
+			</a>
+		</nav>
+        <h1 >ASC AUTO REPAIR</h1>
+	</header>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>College Level</th>
+            <th>Gender</th>
+            <th colspan="2">Update/Delete </th>
+        </tr>
+        
+            <%
+                string sId = "";
+                string uLink, dLink = "";
+                foreach (ArrayList r in outAL)
+                {
+                    %><tr><%
+                              int i = 0;
+                              foreach (object res in r)
+                              {
+                                  if (i == 0)
+                                  {
+                                      sId = res.ToString();
+                                  }
+                                %><td><%=res%></td>
+                             <% i++;
+                                 }
+                                 uLink = "delup.aspx?id=" + sId + "&proc=u";
+                                 dLink = "delup.aspx?id=" + sId + "&proc=d";%>
+                        <td>
+                            <a href="<%=uLink %>"><button id="up">Update</button></a>
+                            <a href="<%=dLink %>"><button id="del">Delete</button></a>
+                        </td>
+
+                    </tr>
+        <%
+                sId = "";
+                i = 0;
+            }
+            %>
+            
+    </table>
+    
+</body>
+</html>

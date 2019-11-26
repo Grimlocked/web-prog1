@@ -94,7 +94,11 @@
     <Content Include="CSS\base.css" />
     <Content Include="CSS\layout2.css" />
     <Content Include="Global.asax" />
+    <Content Include="Images\header_Logo.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\navicon.png" />
     <Content Include="Pages\Index.aspx" />
+    <Content Include="Pages\Results.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +111,13 @@
     </Compile>
     <Compile Include="Pages\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
