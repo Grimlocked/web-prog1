@@ -11,7 +11,14 @@ namespace ASCForumProj.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (String.IsNullOrWhiteSpace(Request["msg"]))
+            {
+                Response.Redirect("ForumPost.aspx");
+            }
+            else
+            {
+                mess.Text = Request["msg"];
+            }
         }
     }
 }
