@@ -30,7 +30,7 @@ body {
 /* Body Header Styles */
 
 body header {
-   background: rgb(255,255,255);   
+   background: rgb(0,62,107);   
 }
 
 body article blockquote {
@@ -43,7 +43,13 @@ body header a > img {
 	display: block;
 	margin: auto;
 	width: 25%;
-	border-radius: 20px;
+}
+
+body header h1 {
+    display: block;
+    margin: auto;
+    width: 25%;
+    color: white;
 }
 
 /* Horizonal Navigation Styles */
@@ -81,6 +87,10 @@ nav.horizontal ul li a:hover, nav.horizontal ul li a:active {
 }
 
 /* Body Styles */
+
+body form {
+    margin: 10%;
+}
 
 body aside {
    background-color: rgb(207, 222, 172);

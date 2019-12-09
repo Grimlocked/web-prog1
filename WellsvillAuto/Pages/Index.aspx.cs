@@ -11,7 +11,28 @@ namespace WellsvillAuto.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            PhoneLbl.Text = "Phone:";
 
         }
+
+        protected void cusPhone_ServerValidate(object sender, ServerValidateEventArgs e)
+        {
+            if (e.Value.Length == 10)
+                e.IsValid = true;
+            else
+            {
+                e.IsValid = false;
+            }
+
+            if (e.IsValid)
+            {
+                Response.Redirect("Results.aspx");
+            }
+            else
+            {
+                Response.Redirect("Index.aspx");
+            }
+        }
+
     }
 }
