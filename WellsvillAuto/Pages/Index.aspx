@@ -68,7 +68,7 @@
                 <asp:TextBox ID="fName" runat="server" />
             </div>
             <div>
-                <asp:Label ID="lNameLbl" runat="server" Text="Last Name:      " />
+                <asp:Label ID="lNameLbl" runat="server" Text="Last Name: " />
                 <asp:TextBox ID="lName" runat="server" />
             </div>
             <div>
@@ -93,7 +93,7 @@
             </div>
             <div>
                 <asp:Label ID="phoneErr" runat="server" />
-                <asp:Label ID="PhoneLbl" runat="server" />
+                <asp:Label ID="PhoneLbl" runat="server" Text="Phone: " />
                 <asp:TextBox ID="Phone" runat="server"  />
                  
                 <asp:CustomValidator ID="cusPhone" runat="server" ControlToValidate="Phone" OnServerValidate="cusPhone_ServerValidate"  ErrorMessage="A Phone number should be 10 digits!" ValidateEmptyText="true" SetFocusOnError="true" ClientValidationFunction="ClientValidate" Display="Static" />

@@ -63,7 +63,6 @@ G:\Web I Repo\WellsvillAuto\bin\System.Web.WebPages.Deployment.xml
 G:\Web I Repo\WellsvillAuto\bin\System.Web.WebPages.Razor.xml
 G:\Web I Repo\WellsvillAuto\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 G:\Web I Repo\WellsvillAuto\obj\Debug\WellsvillAuto.csprojAssemblyReference.cache
-G:\Web I Repo\WellsvillAuto\obj\Debug\WellsvillAuto.csproj.CoreCompileInputs.cache
 G:\Web I Repo\WellsvillAuto\obj\Debug\WellsvillAuto.csproj.CopyComplete
 G:\Web I Repo\WellsvillAuto\obj\Debug\WellsvillAuto.dll
 G:\Web I Repo\WellsvillAuto\obj\Debug\WellsvillAuto.pdb

@@ -24,7 +24,49 @@
 		</nav>
         <h1 >ASC AUTO REPAIR</h1>
 	</header>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>College Level</th>
+            <th>Gender</th>
+            <th colspan="2">Update/Delete </th>
+        </tr>
+        
+            <%
+                string sId = "";
+                string uLink, dLink = "";
+                foreach (ArrayList r in outAL)
+                {
+                    %><tr><%
+                              int i = 0;
+                              foreach (object res in r)
+                              {
+                                  if (i == 0)
+                                  {
+                                      sId = res.ToString();
+                                  }
+                                %><td><%=res%></td>
+                             <% i++;
+                                 }
+                                 uLink = "delup.aspx?id=" + sId + "&proc=u";
+                                 dLink = "delup.aspx?id=" + sId + "&proc=d";%>
+                        <td>
+                            <a href="<%=uLink %>"><button id="up">Update</button></a>
+                            <a href="<%=dLink %>"><button id="del">Delete</button></a>
+                        </td>
 
-    <p>Thank you <asp:Label ID="fName" runat="server" /> <asp:Label ID="lName" runat="server" /> for signing up to have your <asp:Label ID="year" runat="server" /> <asp:Label ID="make" runat="server" /> <asp:Label ID="model" runat="server" /> serviced by us!</p>
+                    </tr>
+        <%
+                sId = "";
+                i = 0;
+            }
+            %>
+            
+    </table>
+    
 </body>
 </html>
